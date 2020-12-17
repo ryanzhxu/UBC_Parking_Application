@@ -45,23 +45,23 @@ public class Stall {
         isParked = false;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Stall stall = (Stall) o;
-
-        if (stallNum != stall.stallNum) return false;
-        if (isParked != stall.isParked) return false;
-        return vehicle.equals(stall.vehicle);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = stallNum;
-        result = 31 * result + (isParked ? 1 : 0);
-        result = 31 * result + vehicle.hashCode();
-        return result;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//
+//        Stall stall = (Stall) o;
+//
+//        if (stallNum != stall.stallNum) return false;
+//        if (isParked != stall.isParked) return false;
+//        return vehicle.equals(stall.vehicle);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        int result = stallNum;
+//        result = 31 * result + (isParked ? 1 : 0);
+//        result = 31 * result + vehicle.hashCode();
+//        return result;
+//    }
 }
